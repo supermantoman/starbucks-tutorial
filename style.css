@@ -9,6 +9,11 @@
 /* 모든 디바이스(all Device)  */
 /* 공통 디바이스 */
 
+/* 공통 아이콘 */
+.fa-sharp {
+  margin-right: var(--spacing-xs);
+}
+
 /* 공통 헤더 */
   .header {
     width: 100%;
@@ -20,6 +25,7 @@
     flex-flow: row nowrap;
     margin: auto 0;
     padding: 0 3.4375rem;
+    position: relative;
   }
   
   .container {
@@ -93,6 +99,11 @@
     color: #fff;
     background-color: #1e3932;
     box-shadow: 0px 3px 20px -15px black;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items : center;
+    padding-left: 12.5rem;
+    /* height: 100%; */
  }
 
 
@@ -102,8 +113,91 @@
   .navigation, .members {
     display: none;
  }
+
+ .header {
+   position: relative;
+   padding: 0 1rem;
+   height: 75px;
+ }
+
+ .logo {
+   width: 2.5rem;
+   height: 2.5rem;
+ }
+
+ .sub-nav {
+   padding-left: 16px;
+ }
+
+  /* 메뉴 제어 버튼 */
+  .buttonWrapper {
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-75%);
+    right: var(--spacing-xl);
+  }
+  
+  .button--burger {
+    border: 0;
+    background-color: transparent;
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .button--burger:focus {
+    outline-offset: 2px;
+  }
+  
+  .button--burgerBarTop,
+  .button--burgerBarMiddle,
+  .button--burgerBarBottom {
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    background: #666;
+    border-radius: 0.25rem;
+    left: 0;
+    transition: all 200ms;
+  }
+  
+  .button--burgerBarTop {
+    top: 0;
+  }
+  
+  .button--burgerBarMiddle {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .button--burgerBarBottom {
+    top: 100%;
+    transform: translateY(-100%);
+  }
+  
+  .button--burger.is--active .button--burgerBarMiddle {
+    transform: translate(-150%, -50%);
+  }
+  
+  .button--burger.is--active .button--burgerBarTop {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  
+  .button--burger.is--active .button--burgerBarBottom {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+
 }
 
 /* 데스크탑 디바이스 */
 
-/* 데스크탑 디바이스 */
+@media (min-width: 768px) {
+
+.buttonWrapper {
+  display: none;
+}
+
+}
