@@ -1,0 +1,12 @@
+.a11y-hidden, legend {
+  background-color: red;  
+  /* 앱솔루트주면 혼자 떠있는 상태 */
+  position: absolute;
+
+  /* 안드로메다 ㄱㄱ로 숨기는 방식, 이렇게 하면 스크린리더가 읽을 수 있다! 화면에서는 안보이지만!!~ */
+  top: -9999em;
+  width: 1px;
+  height: 1px;
+  overflow: hidden; /* 최대한 안보이게 만드는 의도로 overflow: hidden 명시 */
+  clip-path: polygon(0 0, 0 0, 0 0);
+}

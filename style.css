@@ -1,0 +1,109 @@
+@import url(./fonts.css);
+@import url(./normalize.css);
+@import url(./reset.css);
+@import url(./base.css);
+@import url(./a11y-hidden.css);
+@import url(./theme.css);
+
+
+/* 모든 디바이스(all Device)  */
+/* 공통 디바이스 */
+
+/* 공통 헤더 */
+  .header {
+    width: 100%;
+    background-color: #fff;
+    height: 100px;
+    position: sticky;
+    top:0;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: auto 0;
+    padding: 0 3.4375rem;
+  }
+  
+  .container {
+    /* background-color: yellow; */
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .logo {
+    /* background-color: yellow; */
+    height: 3.125rem;
+    width: 3.125rem;
+  }
+
+  .wrapper {
+    /* background-color: coral; */
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100%;
+    flex: 1 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  
+  .navigation {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-grow: 1;
+    padding-left: 3.3333333333333335rem;
+    gap: 25px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+  }
+
+  .members {
+    /* background-color: blue; */
+  }
+  
+  .findAstore {
+    padding-right: 40px;
+  }
+  
+  .findAstore::before {
+    content: "";
+  
+  }
+  
+  .members button {
+    border: 1px solid black;
+    border-radius: 999px;
+    padding: 5px 15px;
+    font-size: var(--text-base);
+  }
+
+  .members .Sign-in {
+    background-color: #fff;
+  }
+
+  .members .Join-Now {
+    background-color: var(--black);
+    color: var(--white);
+  }
+
+
+  .sub-nav {
+    height: 48px;
+    color: #fff;
+    background-color: #1e3932;
+    box-shadow: 0px 3px 20px -15px black;
+ }
+
+
+/* 모바일 디바이스 */
+
+@media (max-width: 768px) {
+  .navigation, .members {
+    display: none;
+ }
+}
+
+/* 데스크탑 디바이스 */
+
+/* 데스크탑 디바이스 */

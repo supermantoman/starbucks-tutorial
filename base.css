@@ -1,0 +1,21 @@
+
+/* 기본 스타일 */
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+/* 링크 스타일 */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 62.5%;
+  color: #222;
+  font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
