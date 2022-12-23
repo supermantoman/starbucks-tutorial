@@ -11,11 +11,23 @@ a {
 }
 
 html {
-  font-size: 10px;
+  /* font-size: 10px; */
 }
 
 body {
-  font-size: 62.5%;
+  /* font-size: 1.6rem; */
   color: #222;
-  font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font: inherit;
+  font-family: SoDoSans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+/* 유연한 미디어 */
+img, {
+  max-width: 100%;
+  height: auto;
+}
+
+video {
+  width: 100%;
+  height: auto;
 }
