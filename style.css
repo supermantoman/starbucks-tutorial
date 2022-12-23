@@ -185,10 +185,10 @@
   }
 
   /* 모바일 비쥬얼 배너 */
+
   .banner {
-    height: 600px;
+    height: 670px;
     background: url(./images/banner-mobile-size.png) no-repeat 0 0/100%;
-    background-position: 0 100%;
   }
 
   .visual-wrapper {
@@ -207,6 +207,7 @@
   }
 
   .visual-sub-text {
+    display: block;
     margin-top: 18px;
   }
 
@@ -225,6 +226,7 @@
   }
 
   .alternative {
+    display: block;
     margin-top: 20px;
   }
 }
