@@ -192,33 +192,40 @@
   }
 
   .visual-wrapper {
+    padding-top: 30px;
     text-align: center;
   }
 
   .visual-text {
+    /* background-color:yellow; */
     display: inline-block;
     line-height: 1.5;
-    width: 180px;
-    font-size: var(--text-lg);
+    width: 210px;
+    font-size: var(--text-xl);
     text-transform: uppercase;
     font-weight:700;
   }
 
   .visual-sub-text {
-    margin-top: 20px;
+    margin-top: 18px;
   }
 
   .join-now {
     content: "";
     border: 0;
     color: var(--white);
-    padding: 10px 20px;
+    padding: 8px 16px;
     border-radius: 9999px;
     background-color: #00754a;
+    margin-top: 20px;
   }
 
   .join-now::after {
     content: "Join in the app";
+  }
+
+  .alternative {
+    margin-top: 20px;
   }
 }
 
