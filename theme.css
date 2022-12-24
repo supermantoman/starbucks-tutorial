@@ -1,11 +1,11 @@
 :root {
-  
+
   /* 컬러 */
   --white: white;
   --black: #000;
 
-  --primary-color: var(#1e3932);
-  --secondary-color: var(#00754a);
+  --primary-color: #1e3932;
+  --secondary-color: #00754a;
   
   /* 악센트 컬러 */
 
@@ -19,11 +19,13 @@
   --spacing-mg: 3rem; /* 48px */
 
   /* 텍스트 크기 */
+  --text-ssm: 0.75rem;
   --text-sm: 1.1428571428571428rem; /* 14px */
   --text-base: 1rem; /* 16px */
   --text-md: 1.1875rem; /* 19px */
   --text-lg: 1.5rem; /* 24px */
   --text-xl: 1.75rem; /* 28px 카테고리 대제목 */
+  --text-xxl: 2rem; /* 32px */
   
 
 
